@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Tu Dulce Placer | Catálogo Oficial</title>
+
+  <meta name="description" content="Tu Dulce Placer - Pastelería artesanal en Lebu. Tortas, cupcakes, alfajores y más. Pedidos por WhatsApp, Instagram y Facebook." />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -16,34 +20,35 @@
   </a>
 
 
- <!-- HEADER -->
-<header class="header">
-  <div class="header-content">
-    <img src="img/logo.jpg" alt="Logo Tu Dulce Placer" class="logo" />
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-content">
+      <img src="img/logo.jpg" alt="Logo Tu Dulce Placer" class="logo" />
 
-    <div class="brand-text">
-      <h1>Tu Dulce Placer</h1>
-      <p>Panadería y Pastelería Artesanal 💜🍰</p>
+      <div class="brand-text">
+        <h1>Tu Dulce Placer</h1>
+        <p>Panadería y Pastelería Artesanal 💜🍰</p>
 
-      <div class="buttons">
-        <a class="btn whatsapp" target="_blank"
-          href="https://wa.me/56930767776?text=Hola%20😊%20Quiero%20hacer%20un%20pedido%20en%20Tu%20Dulce%20Placer">
-          📲 Pedir por WhatsApp
-        </a>
+        <div class="buttons">
+          <a class="btn whatsapp" target="_blank"
+             href="https://wa.me/56930767776?text=Hola%20😊%20Quiero%20hacer%20un%20pedido%20en%20Tu%20Dulce%20Placer">
+            📲 Pedir por WhatsApp
+          </a>
 
-        <a class="btn instagram" target="_blank"
-          href="https://www.instagram.com/tu_dulceplacer/">
-          📸 Instagram
-        </a>
+          <a class="btn instagram" target="_blank"
+             href="https://www.instagram.com/tu_dulceplacer/">
+            📸 Instagram
+          </a>
 
-        <a class="btn facebook" target="_blank"
-          href="https://www.facebook.com/tudulce.placer.5">
-          📘 Facebook
-        </a>
+          <a class="btn facebook" target="_blank"
+             href="https://www.facebook.com/tudulce.placer.5">
+            📘 Facebook
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
+
 
   <!-- DELIVERY -->
   <section class="delivery">
@@ -68,7 +73,7 @@
         <p class="delivery-text">Puedes retirar o coordinar despacho</p>
         <a class="btn map-btn" target="_blank"
            href="https://maps.app.goo.gl/eg9MYD445SHHhYH19">
-           Ver en Google Maps
+          Ver en Google Maps
         </a>
       </div>
     </div>
@@ -91,6 +96,10 @@
     <h2>🧁 Catálogo de Productos</h2>
     <p class="subtitle">Selecciona tu favorito y pide directo por WhatsApp</p>
 
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar producto... (ej: torta, cupcake, brownie)" />
+    </div>
+
     <div class="products" id="product-list">
       <!-- JS -->
     </div>
@@ -99,7 +108,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Tu Dulce Placer | Pastelería artesanal 💜</p>
+    <p>© Tu Dulce Placer | Pastelería artesanal 💜</p>
     <p>Pedidos al WhatsApp: <strong>+56 9 3076 7776</strong></p>
     <p>Instagram: <strong>@tu_dulceplacer</strong></p>
   </footer>
