@@ -6,31 +6,31 @@ const whatsappNumber = "56930767776";
 const hoy = [
   { nombre: "Cupcakes de Vainilla" },
   { nombre: "Brownies de Chocolate" },
-  { nombre: "Alfajores de Maicena" }
+  { nombre: "Alfajores Artesanales" }
 ];
 
 // =====================================
-// TORTAS (EDITABLE)
-// NOMBRES DE ARCHIVOS RECOMENDADOS:
-// torta1.jpg, torta2.jpg, torta3.jpg...
+// TORTAS (6)
 // =====================================
 const tortas = [
-  { nombre: "Torta Chocolate", imagen: "img/torta1.jpg" },
-  { nombre: "Torta Frutilla", imagen: "img/torta2.jpg" },
-  { nombre: "Torta Tres Leches", imagen: "img/torta3.jpg" },
-  { nombre: "Torta Red Velvet", imagen: "img/torta4.jpg" }
+  { nombre: "Torta 1", imagen: "img/torta1.jpg" },
+  { nombre: "Torta 2", imagen: "img/torta2.jpg" },
+  { nombre: "Torta 3", imagen: "img/torta3.jpg" },
+  { nombre: "Torta 4", imagen: "img/torta4.jpg" },
+  { nombre: "Torta 5", imagen: "img/torta5.jpg" },
+  { nombre: "Torta 6", imagen: "img/torta6.jpg" }
 ];
 
 // =====================================
-// COCTEL (EDITABLE)
-// NOMBRES DE ARCHIVOS RECOMENDADOS:
-// coctel1.jpg, coctel2.jpg, coctel3.jpg...
+// COCTEL (6)
 // =====================================
 const coctel = [
-  { nombre: "Canapés surtidos", imagen: "img/coctel1.jpg" },
-  { nombre: "Empanaditas", imagen: "img/coctel2.jpg" },
-  { nombre: "Tapaditos", imagen: "img/coctel3.jpg" },
-  { nombre: "Bocadillos dulces", imagen: "img/coctel4.jpg" }
+  { nombre: "Cóctel 1", imagen: "img/coctel1.jpg" },
+  { nombre: "Cóctel 2", imagen: "img/coctel2.jpg" },
+  { nombre: "Cóctel 3", imagen: "img/coctel3.jpg" },
+  { nombre: "Cóctel 4", imagen: "img/coctel4.jpg" },
+  { nombre: "Cóctel 5", imagen: "img/coctel5.jpg" },
+  { nombre: "Cóctel 6", imagen: "img/coctel6.jpg" }
 ];
 
 
@@ -100,14 +100,12 @@ const searchInput = document.getElementById("searchInput");
 
 searchInput.addEventListener("input", () => {
   const texto = searchInput.value.toLowerCase();
-
   const todo = [...tortas, ...coctel];
 
   const filtrado = todo.filter(producto =>
     producto.nombre.toLowerCase().includes(texto)
   );
 
-  // mostrar resultados en ambas secciones
   renderProductos(
     filtrado.filter(p => p.imagen.includes("torta")),
     "tortas-list"
