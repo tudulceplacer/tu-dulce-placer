@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Tu Dulce Placer | Catálogo Oficial</title>
+  <title>Tu Dulce Placer | Pastelería Artesanal</title>
 
-  <meta name="description" content="Tu Dulce Placer - Pastelería artesanal en Lebu. Tortas, cupcakes, alfajores y más. Pedidos por WhatsApp, Instagram y Facebook." />
+  <meta name="description" content="Tu Dulce Placer - Pastelería artesanal en Lebu. Tortas, coctel, cupcakes y más. Pedidos por WhatsApp, Instagram y Facebook." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -19,11 +19,14 @@
     💬
   </a>
 
-
   <!-- HEADER -->
   <header class="header">
+    <div class="header-overlay"></div>
+
     <div class="header-content">
-      <img src="img/logo.jpg" alt="Logo Tu Dulce Placer" class="logo" />
+      <div class="logo-box">
+        <img src="img/logo.jpg" alt="Logo Tu Dulce Placer" class="logo" />
+      </div>
 
       <div class="brand-text">
         <h1>Tu Dulce Placer</h1>
@@ -49,6 +52,16 @@
     </div>
   </header>
 
+  <!-- FRASE DE MARCA -->
+  <section class="brand-banner">
+    <div class="banner-card">
+      <h2>✨ Endulzamos tus días ✨</h2>
+      <p>
+        En <strong>Tu Dulce Placer</strong> hacemos productos artesanales con mucho cariño,
+        perfectos para cumpleaños, celebraciones o simplemente darte un gusto 💜
+      </p>
+    </div>
+  </section>
 
   <!-- DELIVERY -->
   <section class="delivery">
@@ -79,38 +92,54 @@
     </div>
   </section>
 
-
-  <!-- SECCIÓN HOY -->
+  <!-- HOY -->
   <section class="today">
     <h2>🍰 Lo que tenemos hoy</h2>
     <p class="subtitle">Disponible por tiempo limitado</p>
 
-    <div class="today-box" id="today-products">
-      <!-- JS -->
-    </div>
+    <div class="today-box" id="today-products"></div>
   </section>
 
-
-  <!-- CATÁLOGO -->
-  <section class="catalog">
-    <h2>🧁 Catálogo de Productos</h2>
-    <p class="subtitle">Selecciona tu favorito y pide directo por WhatsApp</p>
+  <!-- BUSCADOR -->
+  <section class="search-section">
+    <h2>🔍 Buscar productos</h2>
+    <p class="subtitle">Escribe el nombre de un producto (torta, coctel, cupcake, etc.)</p>
 
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Buscar producto... (ej: torta, cupcake, brownie)" />
-    </div>
-
-    <div class="products" id="product-list">
-      <!-- JS -->
+      <input type="text" id="searchInput" placeholder="Buscar producto..." />
     </div>
   </section>
 
+  <!-- TORTAS -->
+  <section class="catalog">
+    <h2>🎂 Tortas</h2>
+    <p class="subtitle">Tortas artesanales para toda ocasión</p>
+    <div class="products" id="tortas-list"></div>
+  </section>
+
+  <!-- COCTEL -->
+  <section class="catalog">
+    <h2>🥪 Cóctel</h2>
+    <p class="subtitle">Perfecto para eventos, celebraciones y reuniones</p>
+    <div class="products" id="coctel-list"></div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© Tu Dulce Placer | Pastelería artesanal 💜</p>
-    <p>Pedidos al WhatsApp: <strong>+56 9 3076 7776</strong></p>
-    <p>Instagram: <strong>@tu_dulceplacer</strong></p>
+    <div class="footer-box">
+      <h3>Tu Dulce Placer 💜</h3>
+      <p>Pastelería artesanal en Lebu</p>
+      <p><strong>Pedidos:</strong> +56 9 3076 7776</p>
+      <p><strong>Instagram:</strong> @tu_dulceplacer</p>
+
+      <div class="footer-links">
+        <a target="_blank" href="https://wa.me/56930767776?text=Hola%20😊%20Quiero%20hacer%20un%20pedido%20en%20Tu%20Dulce%20Placer">WhatsApp</a>
+        <a target="_blank" href="https://www.instagram.com/tu_dulceplacer/">Instagram</a>
+        <a target="_blank" href="https://www.facebook.com/tudulce.placer.5">Facebook</a>
+      </div>
+
+      <p class="footer-copy">© Tu Dulce Placer - Todos los derechos reservados</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
